@@ -1,20 +1,37 @@
 <html>
   <head>
   <link href = "style.css" rel = "stylesheet">
+  <link href = "css/style_grid.css" rel = "stylesheet">
+    <link href = "css/my_style.css" rel = "stylesheet">
     <script src="js/script.js"></script>
   </head>
   <body >
 
-	<div id = "container">
-	<p id = "div-1" class = "div-class">Result (mm-dd-yyyy):</p>
-	<p id = "div-2" class = "div-class">Result (mm/dd/yyyy):</p>
-	<p class = "div-class div-2">Result (dd-mm-yyyy):</p>
-	<p id = "div-4" class = "div-class">Result (dd/mm/yyyy):</p>
-	<!--<p id = "test" >Result :</p>-->
-
+	<div class = "container">
+	<div class="row">
+	  <div class="cols col-6 colTask">
+	  	<div id="container">
+		<p id = "div-1" class = "div-class">Result (mm-dd-yyyy):</p>
+		<p id = "div-2" class = "div-class">Result (mm/dd/yyyy):</p>
+		<p class = "div-class div-2">Result (dd-mm-yyyy):</p>
+		<p id = "div-4" class = "div-class">Result (dd/mm/yyyy):</p>
+		<!--<p id = "test" >Result :</p>-->
+		<button OnClick = "CalcToDiv()" class = "btn btn-2">Run</button> 
+		</div>
+		</div>
+		<div class=" cols col-6 colTask" ></div>
 	</div>
-	  
-	<button OnClick = "CalcToDiv()" class = "btn btn-2">Run</button> </br>=)
+	<div class="row">
+		<div class=" cols col-6 colTask"></div>
+		<div class=" cols col-6 colTask"></div>
+	</div>
+	<div class="row colTask">
+		<h4>TaskS:</h4>
+		<ol>
+			<li>Move JS code from Test.html to separate js file.
+Create separate "Pull Request" to merge these changes to main branch (master). </li>
+		</ol>
+	</div>
   </body>
 </html>
 
