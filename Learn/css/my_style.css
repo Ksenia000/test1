@@ -4,3 +4,9 @@
  fieldset{
  	padding:10px;
  }
+#res{
+	color:green;
+}
+#resErr{
+	color:red;
+}

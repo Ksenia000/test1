@@ -28,11 +28,11 @@
 	      <legend>Num Game</legend>
 			<h3>Gues NUMBER</h3>
 			<p>Choose number between 1 to 10 and enter this number in field:</p>
-			<form name = "numb" onsubmit="return validate ()" >
+			<div name = "numb" >
 				<p><input type="text" name="numField" id="field"></input>	</p>
-				<p id="res"></p>
-				<p><button OnClick = "validate()" class = "btn btn-2">Play</button></p>
-			</form>
+				<p id="res"><span id="resErr"></p>
+				<p><button onClick = "validate()" class = "btn btn-2">Play</button></p>
+			</div>
 			</fieldset>
 		</div>
 	</div>
