@@ -37,7 +37,7 @@ var div1;
 			var container =  document.getElementById("container");
 			var	firstParagraph = container.firstElementChild;
 			var p = document.createElement("p");
-			var count =  document.getElementById("container").getElementsByTagName("p").length+1;
+			var count = document.getElementById("container").getElementsByTagName("p").length+1;
 			p.innerHTML = "<b>New p.Paragraphs amount = </b>" + count;
 			container.insertBefore(p, firstParagraph );   
 			////task 4: style green
