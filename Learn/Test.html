@@ -3,10 +3,27 @@
 	<link href = "style.css" rel = "stylesheet">
   	<link href = "css/style_grid.css" rel = "stylesheet">
 	<link href = "css/my_style.css" rel = "stylesheet">
+	<link href = "css/animation.css" rel = "stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="js/script.js"></script>
     <script src="js/num_script.js"></script>
+    <script src="js/script_Christmas.js"></script>
+
+    
+    
+    
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NB3T5V5');</script>
+<!-- End Google Tag Manager -->
+    
+    
   </head>
-  <body >
+  <body>
 
 	<div class = "container">
 	<div class="row">
@@ -20,38 +37,60 @@
 			<p id="div-4" class="div-class">Result (dd/mm/yyyy):</p>
 			<!--<p id = "test" >Result :</p>-->
 			<button OnClick="CalcToDiv()" class="btn btn-2">Run</button> 
-		</div>
-		</fieldset>
+		  </div>
+    </fieldset>
 		</div>
 		<div class="cols col-6 colTask" >
 		  <fieldset>
-	      <legend>Num Game</legend>
+	    <legend>Num Game</legend>
 			<h3>Gues NUMBER</h3>
 			<p>Choose number between 1 to 10 and enter this number in field:</p>
 			<div name="numb">
-				<p><input type="text" name="numField" id="field"></input>	</p>
-				<p id="res"><span id="resErr"></p>
-				<p><button onClick="validate()"class ="btn btn-2">Play</button></p>
+				<p><input type="text" name="numField" id="field">	</p>
+        <p id="res"><span id="resErr"></span></p>
+				<p><button onClick="validate()"class ="btn btn-2"> Play </button> </p>
 			</div>
 		   </fieldset>
 		</div>
 	</div>
 	<div class="row">
-		<div class="cols col-6 colTask"></div>
+		<div class="cols col-6 colTask">
+			<fieldset>
+	 		<legend>Christmas</legend>
+			<h3>Ho-Ho-Ho....</h3>
+			<p>How many days left until next Christmas?Hmm...</p>
+			<p><button onClick="calculateChristmas()"class ="btn btn-2"> calculate </button> </p></br>
+			<!--<p id="christ"></p>-->
+			<div class="content__container">
+			    <p id="christmas_text"> </p>
+			    
+			    <ul class="content__container__list">
+			      <li id="christ" class="content__container__list__item"></li>
+			      <li id="christ2" class="content__container__list__item"></li>
+			      <li id="christ3" class="content__container__list__item"></li>
+			      <li id="christ4" class="content__container__list__item"></li>
+			    </ul>
+			  </div>
+			</fieldset>
+		</div>
 		<div class="cols col-6 colTask"></div>
 	</div>
-	<div class="row colTask">
+	<div class="row colTask"> 
 		<h4>TaskS:</h4>
-		<ol>
+		<ol start="7">
 			<li>Move JS code from Test.html to separate js file.
 Create separate "Pull Request" to merge these changes to main branch (master). </li>
 			<li>Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched"</li>
+			<li>Write a JavaScript program to calculate days left until next Christmas.</li>
 		</ol>
 	</div>
+	</div>
+	
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB3T5V5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
   </body>
 </html>
-
-
-
-
-

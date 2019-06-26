@@ -1,0 +1,57 @@
+#christmas_text{
+width:165px;
+float: left;
+}
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 20px;
+  padding: 0 40px;
+}
+.content__container:before {
+  left: 0;
+}
+.content__container:after {
+  position: absolute;
+  right: 0;
+}
+
+.content__container__list {
+  margin-top: 0;
+  padding-left: 5px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 15s;
+
+ 
+float: left;
+}
+
+.content__container__list{
+  margin-top:-11px;
+}
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  18.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  45.32%,75.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+ 
+}
+
