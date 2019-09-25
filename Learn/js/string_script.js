@@ -12,6 +12,10 @@ function rotateString(){
   }, 5000);
 }
 
+function webSite() {
+    document.getElementById("website").innerHTML = document.URL;
+}
+
 function fillLeapYearElement() {
     var today = new Date();
     var year = today.getFullYear();
@@ -26,5 +30,4 @@ function fillLeapYearElement() {
     } else {
         document.getElementById("resYear").innerHTML = year + " is'nt leap year in the Gregorian calendar :(";
     }
-    console.log(year)
 }
