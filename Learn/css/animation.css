@@ -48,10 +48,12 @@ float: left;
   }
   33.32%,45.98% {
     -webkit-transform: translate3d(0, -50%, 0);
-            transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
   45.32%,75.98% {
     -webkit-transform: translate3d(0, -50%, 0);
-            transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
  
 }
 
