@@ -4,6 +4,7 @@
   <link href = "css/style_grid.css" rel = "stylesheet">
   <link href = "css/my_style.css" rel = "stylesheet">
   <script src = "js/string_script.js"></script>
+  <script src = "js/temperature_script.js"></script>
  </head>
  <body>
   <div class = "container">
@@ -20,10 +21,24 @@
 	<div class="cols col-6 colTask">
      <fieldset>
       <legend>Сalendar</legend>
-      <h3>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.</h3>
-	  <button onClick = "fillLeapYearElement()"> Is the year leap?</button>
-	  <span id = "resYear"></span>
+      <h3>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.</h3></br>
+	  <button onClick = "fillLeapYearElement()"> Is the year leap?</button></br>
+	  <span id = "resYear"></span></br>
 	 </fieldset>
+	</div>
+	<div class = "cols col-6 colTask">
+     <fieldset>
+      <legend>Temperatures</legend>
+      <h3>Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.</h3>
+	  <p><input type = "text" name = "tempData" id = "convert"  value = "45"> 
+	  <select id = "degr">
+	   <option>C</option>
+	   <option>F</option>
+	  </select>
+	  </br>
+	  <button onClick = "Temperatures()">Convert</button> </br>
+	  <span id = "resConvert"></span>
+	  </fieldset>
 	</div>
 	<div class = "cols col-6 colTask">
      <fieldset>
