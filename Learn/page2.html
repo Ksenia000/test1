@@ -1,42 +1,56 @@
 <html>
  <head>
-  <link href = "style.css" rel = "stylesheet">
-  <link href = "css/style_grid.css" rel = "stylesheet">
-  <link href = "css/my_style.css" rel = "stylesheet">
-  <script src = "js/string_script.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <link href="css/style_grid.css" rel="stylesheet">
+  <link href="css/my_style.css" rel="stylesheet">
+  <script src="js/string_script.js"></script>
+  <script src="js/temperature_script.js"></script>
   <script src = "js/difference_script.js"></script>
   <script src = "js/check_script.js"></script>
  </head>
  <body>
-  <div class = "container">
+  <div class="container">
    <div class ="cols col-6 colTask">
     <fieldset>
      <legend>Rotate</legend>
      <h3>Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front</h3>
-	 <p><input type = "text" name = "tempField" id = "rotate" readonly value = "w3resource"></br>
-	 <button onClick = "rotateString()"> Rotate</button> 
-	 <span id = "resRotate"></span>
+	 <p><input type="text" name="tempField" id="rotate" readonly value="w3resource"></br>
+	 <button onClick="rotateString()"> Rotate</button> 
+	 <span id="resRotate"></span>
 	 </p>
 	</fieldset>
-   </div>
-   <div class="cols col-6 colTask">
-    <fieldset>
-     <legend>Сalendar</legend>
-     <h3>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.</h3>
-	 <button onClick = "fillLeapYearElement()"> Is the year leap?</button>
-	 <span id = "resYear"></span>
-	</fieldset>
-   </div>
-   <div class = "cols col-6 colTask">
-    <fieldset>
-     <legend>URL</legend>
-     <h3>Write a JavaScript program to get the website URL (loading page).</h3>
-	 <button onClick = "webSite()">what page am i on</button>
-	 <span id = "website"></span>
-	</fieldset>
-   </div>
-
-   <div class = "cols col-6 colTask">
+	</div>
+	<div class="cols col-6 colTask">
+     <fieldset>
+      <legend>Сalendar</legend>
+      <h3>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.</h3></br>
+	  <button onClick="fillLeapYearElement()"> Is the year leap?</button></br>
+	  <span id="resYear"></span></br>
+	 </fieldset>
+	</div>
+	<div class="cols col-6 colTask">
+     <fieldset>
+      <legend>Temperatures</legend>
+      <h3>Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.</h3>
+	  <p><input type="text" name="tempData" id="convert"  value="45"> 
+	  <select id="degr">
+	   <option>C</option>
+	   <option>F</option>
+	  </select>
+	  </br>
+	  <button onClick="Temperatures()">Convert</button> </br>
+	  <span id="resConvert"></span>
+	  </fieldset>
+	</div>
+	<div class="cols col-6 colTask">
+     <fieldset>
+      <legend>URL</legend>
+      <h3>Write a JavaScript program to get the website URL (loading page).</h3>
+	  <button onClick="webSite()">what page am i on</button>
+	  <span id="website"></span>
+	 </fieldset>
+	</div>
+  <div class = "cols col-6 colTask">
     <fieldset>
      <legend>Task-11:</legend>
      <h3> Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.</h3>
@@ -46,7 +60,6 @@
      <span id = "diff"></span>
     </fieldset>
    </div>
-
   </div>
  </body>
 </html>
