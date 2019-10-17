@@ -4,6 +4,8 @@
   <link href = "css/style_grid.css" rel = "stylesheet">
   <link href = "css/my_style.css" rel = "stylesheet">
   <script src = "js/string_script.js"></script>
+  <script src = "js/difference_script.js"></script>
+  <script src = "js/check_script.js"></script>
  </head>
  <body>
   <div class = "container">
@@ -16,23 +18,35 @@
 	 <span id = "resRotate"></span>
 	 </p>
 	</fieldset>
-	</div>
-	<div class="cols col-6 colTask">
-     <fieldset>
-      <legend>Сalendar</legend>
-      <h3>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.</h3>
-	  <button onClick = "fillLeapYearElement()"> Is the year leap?</button>
-	  <span id = "resYear"></span>
-	 </fieldset>
-	</div>
-	<div class = "cols col-6 colTask">
-     <fieldset>
-      <legend>URL</legend>
-      <h3>Write a JavaScript program to get the website URL (loading page).</h3>
-	  <button onClick = "webSite()">what page am i on</button>
-	  <span id = "website"></span>
-	 </fieldset>
-	</div>
+   </div>
+   <div class="cols col-6 colTask">
+    <fieldset>
+     <legend>Сalendar</legend>
+     <h3>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.</h3>
+	 <button onClick = "fillLeapYearElement()"> Is the year leap?</button>
+	 <span id = "resYear"></span>
+	</fieldset>
+   </div>
+   <div class = "cols col-6 colTask">
+    <fieldset>
+     <legend>URL</legend>
+     <h3>Write a JavaScript program to get the website URL (loading page).</h3>
+	 <button onClick = "webSite()">what page am i on</button>
+	 <span id = "website"></span>
+	</fieldset>
+   </div>
+
+   <div class = "cols col-6 colTask">
+    <fieldset>
+     <legend>Task-11:</legend>
+     <h3> Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.</h3>
+     <p>Enter your number:</br>
+     <input type = "text" name = "intDiff" id = "intDiff"  value = "10"></p>
+     <button onClick = "Difference()">Sum</button>
+     <span id = "diff"></span>
+    </fieldset>
+   </div>
+
   </div>
  </body>
 </html>
