@@ -1,12 +1,12 @@
-function SumInString() {
-    var str1 = document.getElementById("str1").value;
-    var arrStr = Array.from(str1);
-    var res = 0;
-    var lgth = arrStr.length;
-    for (var i = 0; i < lgth; i++) {
-        if (Check(arrStr[i]) == true) {
-            res += parseInt(arrStr[i], 10);
+function extractAndSumFumbersInString() {
+    var userString = document.getElementById("str1").value;
+    var arrFromString = Array.from(userString);
+    var result = 0;
+    var lengthArrFromString = arrFromString.length;
+    for (var i = 0; i < lengthArrFromString; i++) {
+        if (isNumber(arrFromString[i]) == true) {
+            result += parseInt(arrFromString[i], 10);
         }
     }
-    document.getElementById("resStringSum").innerHTML = res;
+    document.getElementById("resStringSum").innerHTML = result;
 }
