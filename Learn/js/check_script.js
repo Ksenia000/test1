@@ -1,5 +1,5 @@
 var val;
-function isNumber (val){
+function isNumber(val){
  var int1 = val;
  var dataInt1 = parseInt( int1, 10 );
  var res;
