@@ -14,8 +14,6 @@
         }
 
         .col-sm-3 {
-            padding: 50px;
-            border: 1px solid green;
             position: fixed;
             top: 50%;
             left: 50%;
@@ -29,35 +27,35 @@
         }
 
         label {
-            margin-top: 10px;
+            display: inline;
         }
 
-        input {
-            margin-bottom: 10px;
-        }
-
-        span {
-            float: right;
-        }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="col-sm-3 rounded">
-        <b><h2 class="text-center ">Sign in</h2></b>
-        <form action="/action_page.php" method="post">
-            <label for="uname"><b>Email adress</b></label>
-            <input type="email" placeholder="Enter email" name="emailaddress" required class="form-control">
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required class="form-control">
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
-            <span class="text-muted small">Forgot <a href="#">password?</a></span>
-        </form>
+    <div class="row">
+        <div class="col-sm-3 rounded border border-green mr-auto p-lg-5">
+            <b><h2 class="text-center ">Sign in</h2></b>
+            <form action="/action_page.php" method="post">
+                <div class="form-group">
+                    <label for="emailaddress"><b>Email adress</b>
+                        <input type="email" placeholder="Enter email" name="emailaddress" required class="form-control">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Password</b>
+                        <input type="password" placeholder="Enter Password" name="password" required class="form-control">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <span class="text-muted small">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
     </div>
-    </di>
 </div>
 </body>
 </html>
