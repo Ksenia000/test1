@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* .col-sm-3 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }   */
+
+        .btn {
+            font-weight: bold;
+        }
+
+        label {
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 rounded border border-green p-lg-5 mx-auto my-5">
+            <b><h2 class="text-center ">Sign in</h2></b>
+            <form action="/action_page.php" method="post">
+                <div class="form-group">
+                    <label for="emailaddress"><b>Email adress</b>
+                        <input type="email" placeholder="Enter email" name="emailaddress" required class="form-control">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Password</b>
+                        <input type="password" placeholder="Enter Password" name="password" required class="form-control">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <span class="text-muted small">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
